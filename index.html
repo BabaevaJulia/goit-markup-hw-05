@@ -61,17 +61,32 @@
     </header>
 
     <main>
-      <!--Герой-->
+
+
+      <!-------------Modal------------>
+
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <button class="button-modal" type="button" data-modal-close>
+                <svg class="icon-close" width="11" height="11">
+                  <use href="./images/sprite.svg#icon-modal"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+
+      <!-----------Герой---------->
       
       <section class="section-hero overlay">
         <div class="container hero">
           <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-          <button class="button" type="button">Заказать услугу</button>
+          <button class="button" type="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       
     
-      <!--Приоритеты-->
+      <!--------Приоритеты-------->
       <section class="section ">
         <div class="container">
           <ul class="list section-container">
@@ -99,15 +114,32 @@
         </div>
       </section>
 
+    
+
       <!--Чем мы занимаемся-->
 
-      <section class="section-box ">
-        <div class="container">
+      <section class="section-box">
+        <div class="container ">
           <h2 class="section-work">Чем мы занимаемся</h2>
-            <ul class="about-list list">
-              <li class="about-item"><img src="./images/box1.jpg" alt="работа за компьютером" width="370" /></li>
-              <li class="about-item"><img src="./images/box2.jpg" alt="ноутбук и телефон" width="370" /></li>
-              <li class="about-item"><img src="./images/box3.jpg" alt="планшет" width="370" /></li>
+            <ul class="about-list list ">
+              <li class="about-item">
+                <div class="work-thumb">
+                  <img src="./images/box1.jpg" alt="работа за компьютером" width="370" />
+                  <p class="thumb-text">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
+                </div>
+              </li>
+              <li class="about-item">
+                <div class="work-thumb">
+                  <img src="./images/box2.jpg" alt="ноутбук и телефон" width="370" />
+                  <p class="thumb-text">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
+                </div>
+              </li>
+              <li class="about-item">
+                <div class="work-thumb">
+                  <img src="./images/box3.jpg" alt="планшет" width="370" />
+                  <p class="thumb-text">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
+                </div>
+              </li>
             </ul>
         </div>
       </section>
@@ -394,7 +426,7 @@
       </div>  
     </footer>
 
-
+    <script src="./js/modal.js"></script>
   </body>
 
 </html>
